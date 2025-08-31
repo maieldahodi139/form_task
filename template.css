@@ -22,7 +22,45 @@
           border-radius: 80px;
           margin: 5% auto 2% auto;
       }
-
+     select, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #66b3ff;
+}
+input[type="submit"]:hover {
+    border-color: #66b3ff;
+}
+input:active,
+select:active,
+textarea:active {
+    background-color: #fafafa;
+}
+input[type="submit"]:active {
+    background-color: #eee;
+}
+input:required,
+select:required,
+textarea:required {
+    border-color: #555;
+}
+input:required:invalid,
+select:required:invalid,
+textarea:required:invalid {
+    border-color: red;
+}
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: green;
+}
       div {
           background-color: rgba(255, 255, 255, 0.3);
           /* transparent white */
